@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="../src/images/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../src/styles.css" />
+        <title>Frontend Mentor | Expenses chart component</title>
+    </head>
+    <body>
+        <main>
+            <header class="header">
+                <p class="balance-text">My balance</p>
+                <p class="balance-number">$921.48</p>
+            </header>
+            <div class="container">
+                <div class="title">Spending - Last 7 days</div>
+                <div class="chart">
+                    <div class="day monday-bar"></div>
+                    <div class="day monday-text">mon</div>
+                    <div class="day tuesday-bar"></div>
+                    <div class="day tuesday-text">tue</div>
+                    <div class="day wednesday-bar"></div>
+                    <div class="day wednesday-text">wed</div>
+                    <div class="day thursday-bar"></div>
+                    <div class="day thursday-text">thu</div>
+                    <div class="day friday-bar"></div>
+                    <div class="day friday-text">fri</div>
+                    <div class="day saturday-bar"></div>
+                    <div class="day saturday-text">sat</div>
+                    <div class="day sunday-bar"></div>
+                    <div class="day sunday-text">sun</div>
+                </div>
+
+                <div class="summary">
+                    <div class="thismonth">
+                        <p class="thismonth-text">Total this month</p>
+
+                        <p class="thismonth-number">$478.33</p>
+                    </div>
+                    <div class="lastmonth">
+                        <p class="lastmonth-number">+2.4%</p>
+                        <p class="lastmonth-text">from last month</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="attribution">
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >. Coded by
+                <a href="https://github.com/marcinsuski">Marcin Suski</a>.
+            </div>
+        </footer>
+
+        <script src="./src/script.js"></script>
+    </body>
+</html>
