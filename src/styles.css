@@ -67,6 +67,7 @@ main {
 
 .balance-number {
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .container {
@@ -104,71 +105,118 @@ main {
     display: grid;
     grid-template-rows: 1fr 3% 10% 10%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
 }
 
 .day {
-   
+    display: flex;
     font-size: 0.7em;
-    color: var(--darkbrown);
-    justify-content: center;
-    gap: 10px;
-    place-self: center;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
 }
 
+.bar {
+   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;     
+}
+
+
+.bar-description {
+    width: 96%;
+    height: 23%;
+    background-color: var(--darkbrown);
+    border: 1px solid;
+    border-radius: 5px;    
+    margin-bottom: 8px; 
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.hidden {
+    display: none;
+}
+
+
 .monday-bar {
-    align-self: end;
+    justify-self: center;
     width: 70%;
     height: 25%;
     border-radius: 5px;
-    background-color: var(--softred)  
+    background-color: var(--softred)  ;
+    cursor: pointer;
+}
+
+
+
+.monday-bar:hover,
+.tuesday-bar:hover,
+.wednesday-bar:hover,
+.thursday-bar:hover,
+.friday-bar:hover,
+.saturday-bar:hover,
+.sunday-bar:hover {
+    opacity: 0.6;
+    
 }
 
 .tuesday-bar {
-    align-self: end;
+
     width: 70%;
     height: 50%;
     border-radius: 5px;
-    background-color: var(--softred)  
+    background-color: var(--softred);
+    cursor: pointer;
 }
 
 .wednesday-bar {
-    align-self: end;
+
     width: 70%;
     height: 70%;
     border-radius: 5px;
-    background-color: var(--cyan)  
+    background-color: var(--cyan);
+    cursor: pointer;
 }
 
 .thursday-bar {
-    align-self: end;
     width: 70%;
     height: 45%;
     border-radius: 5px;
-    background-color: var(--softred)  
+    background-color: var(--softred);
+    cursor: pointer;
 }
 
 .friday-bar {
-    align-self: end;
+
     width: 70%;
     height: 25%;
     border-radius: 5px;
-    background-color: var(--softred)  
+    background-color: var(--softred);
+    cursor: pointer;
 }
 
 .saturday-bar {
-    align-self: end;
+
     width: 70%;
     height: 60%;
     border-radius: 5px;
-    background-color: var(--softred)  
+    background-color: var(--softred);
+    cursor: pointer;
 }
 
 .sunday-bar {
-    align-self: end;
+
     width: 70%;
     height: 35%;
     border-radius: 5px;
-    background-color: var(--softred)  
+    background-color: var(--softred);
+    cursor: pointer;  
 }
 
 
