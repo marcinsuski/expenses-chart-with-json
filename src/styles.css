@@ -143,19 +143,8 @@ main {
     font-size: 1em;
     border-radius: 5px;    
     position: absolute;
-    /* width: 96%;
-    height: 23%;
-    background-color: var(--darkbrown);
-    border: 1px solid;
-    border-radius: 5px;    
-    margin-bottom: 8px; 
-    color: white;
-    padding: 0.5em;
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: 700; */
-}
 
+}
 
 
 .monday::after {
