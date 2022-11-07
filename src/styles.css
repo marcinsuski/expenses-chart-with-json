@@ -1,7 +1,6 @@
 :root {
     --softred: hsl(10, 79%, 65%);
     --cyan: hsl(186, 34%, 60%);
-
     --darkbrown: hsl(25, 47%, 15%);
     --mediumbrown: hsl(28, 10%, 53%);
     --cream: hsl(27, 66%, 92%);
@@ -121,12 +120,30 @@ main {
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;     
+    align-items: center;    
+}
+
+.col {
+
+    position: relative; 
 }
 
 
-.bar-description {
-    width: 96%;
+.col-description {
+
+    width: 56px;
+    height: 32px;
+    top: -37px;
+    left: -7px;
+    background-color: var(--darkbrown);
+    border: 1px solid;
+    color: white;
+    padding: 0.6em 0.5em 0 0.5em;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 5px;    
+    position: absolute;
+    /* width: 96%;
     height: 23%;
     background-color: var(--darkbrown);
     border: 1px solid;
@@ -136,37 +153,47 @@ main {
     padding: 0.5em;
     text-align: center;
     font-size: 1.1em;
-    font-weight: 700;
-}
-
-.hidden {
-    display: none;
+    font-weight: 700; */
 }
 
 
-.monday-bar {
+
+.monday::after {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.monday:hover,
+.tuesday:hover,
+.wednesday:hover,
+.thursday:hover,
+.friday:hover,
+.saturday:hover,
+.sunday:hover {
+
+    opacity: 0.6;
+    transform: scale(105%);
+    transition: all 0.3s ease-in-out;
+}
+
+.monday {
     justify-self: center;
     width: 70%;
     height: 25%;
     border-radius: 5px;
     background-color: var(--softred)  ;
     cursor: pointer;
-}
-
-
-
-.monday-bar:hover,
-.tuesday-bar:hover,
-.wednesday-bar:hover,
-.thursday-bar:hover,
-.friday-bar:hover,
-.saturday-bar:hover,
-.sunday-bar:hover {
-    opacity: 0.6;
+    position: relative;
     
 }
 
-.tuesday-bar {
+
+
+.tuesday {
 
     width: 70%;
     height: 50%;
@@ -175,7 +202,7 @@ main {
     cursor: pointer;
 }
 
-.wednesday-bar {
+.wednesday {
 
     width: 70%;
     height: 70%;
@@ -184,7 +211,7 @@ main {
     cursor: pointer;
 }
 
-.thursday-bar {
+.thursday {
     width: 70%;
     height: 45%;
     border-radius: 5px;
@@ -192,7 +219,7 @@ main {
     cursor: pointer;
 }
 
-.friday-bar {
+.friday {
 
     width: 70%;
     height: 25%;
@@ -201,7 +228,7 @@ main {
     cursor: pointer;
 }
 
-.saturday-bar {
+.saturday {
 
     width: 70%;
     height: 60%;
@@ -210,7 +237,7 @@ main {
     cursor: pointer;
 }
 
-.sunday-bar {
+.sunday {
 
     width: 70%;
     height: 35%;
