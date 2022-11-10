@@ -127,7 +127,7 @@ main {
     width: 56px;
     height: 32px;
     top: -37px;
-    left: -7px;
+    left: clamp(-4px, -5px - 1vw, -7px);
     background-color: var(--darkbrown);
     border: 1px solid;
     color: white;
